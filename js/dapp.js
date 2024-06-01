@@ -45,7 +45,7 @@ const loadInfo = async () => {
     web3.eth.getBalance(fundingContractConfig.address).then(data => {
         amountCollectedDiv.innerText = parseFloat(data) / (10 ** 18) + " ETH"
     }).catch(e => console.log(e))
-
+   
     //liste donations
     let nbrDonations = await fundingContract.methods.nbr_donations().call()
     listeDonator.innerHTML = ""
