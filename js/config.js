@@ -1,6 +1,6 @@
 export const fundingContractConfig ={
-    address:"0xCFB75954Db1341843c0a9B429Bf0e64EB859ad4E",
-    ABI:[
+    address:"0x4ce2D8386716D12E91938286d025C0834E02F5E2",
+    ABI:  [
 		{
 			"inputs": [
 				{
@@ -10,7 +10,7 @@ export const fundingContractConfig ={
 				},
 				{
 					"internalType": "address",
-					"name": "_recipient",
+					"name": "_receipient",
 					"type": "address"
 				}
 			],
@@ -25,7 +25,7 @@ export const fundingContractConfig ={
 			"inputs": [
 				{
 					"internalType": "address",
-					"name": "_owner",
+					"name": "_newOwner",
 					"type": "address"
 				}
 			],
@@ -36,39 +36,7 @@ export const fundingContractConfig ={
 		},
 		{
 			"inputs": [],
-			"name": "donate",
-			"outputs": [],
-			"stateMutability": "payable",
-			"type": "function"
-		},
-		{
-			"inputs": [
-				{
-					"internalType": "uint256",
-					"name": "",
-					"type": "uint256"
-				}
-			],
-			"name": "donaters",
-			"outputs": [
-				{
-					"internalType": "address",
-					"name": "",
-					"type": "address"
-				}
-			],
-			"stateMutability": "view",
-			"type": "function"
-		},
-		{
-			"inputs": [
-				{
-					"internalType": "address",
-					"name": "",
-					"type": "address"
-				}
-			],
-			"name": "donations",
+			"name": "collected",
 			"outputs": [
 				{
 					"internalType": "uint256",
@@ -81,15 +49,9 @@ export const fundingContractConfig ={
 		},
 		{
 			"inputs": [],
-			"name": "nbr_donations",
-			"outputs": [
-				{
-					"internalType": "uint256",
-					"name": "",
-					"type": "uint256"
-				}
-			],
-			"stateMutability": "view",
+			"name": "donate",
+			"outputs": [],
+			"stateMutability": "payable",
 			"type": "function"
 		},
 		{
@@ -110,9 +72,9 @@ export const fundingContractConfig ={
 			"name": "ratio",
 			"outputs": [
 				{
-					"internalType": "uint8",
+					"internalType": "uint256",
 					"name": "",
-					"type": "uint8"
+					"type": "uint256"
 				}
 			],
 			"stateMutability": "view",
@@ -135,7 +97,7 @@ export const fundingContractConfig ={
 			"inputs": [],
 			"name": "redeem",
 			"outputs": [],
-			"stateMutability": "nonpayable",
+			"stateMutability": "payable",
 			"type": "function"
 		},
 		{

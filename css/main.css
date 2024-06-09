@@ -78,7 +78,6 @@ main table th,main table td{
     color: rgb(0, 162, 255);
     background: white;
     border: 1px solid black;
-  
 }
 .donate input{
     border: 1px solid lightgray;
@@ -137,4 +136,7 @@ main section:last-child ul li div:first-child::before{
     justify-content: center;
     color: white;
     font-size: 5em;
+}
+#myAdress{
+    color: white;
 }
